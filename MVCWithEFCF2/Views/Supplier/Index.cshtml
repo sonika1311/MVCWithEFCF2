@@ -1,7 +1,16 @@
-﻿
+﻿ @model IEnumerable<MVCWithEFCF2.Models.Supplier>
 @{
     ViewBag.Title = "Index";
 }
 
 <h2>Index</h2>
-
+<table>
+    @foreach(var supplier in Model)
+            {
+    <tr>
+        <td>@supplier.Sid</td>
+        <td>@supplier.SupplierName</td>
+    </tr>
+               
+            }
+</table>

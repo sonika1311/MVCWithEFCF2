@@ -19,11 +19,11 @@ namespace MVCWithEFCF2.Controllers
             //Supplier s4 = new Supplier { Sid = 104, SupplierName = "Prasad Distributors." };
             //dc.Suppliers.Add(s1); //dc.Suppliers.Add(s2);
             //dc.Suppliers.Add(s3); //dc.Suppliers.Add(s4);
-            var sup1 = dc.Suppliers.Find(101);
+            /*var sup1 = dc.Suppliers.Find(101);
             dc.Entry(sup1).State = System.Data.Entity.EntityState.Deleted;
             dc.Entry(dc.Suppliers.Find(102)).State = System.Data.Entity.EntityState.Deleted;
             dc.Entry(dc.Suppliers.Find(103)).State = System.Data.Entity.EntityState.Deleted;
-            dc.SaveChanges();
+            dc.SaveChanges();*/
             return View(dc.Suppliers);
         }
 

@@ -17,5 +17,6 @@ namespace MVCWithEFCF2.Models
         [Column("Sname", TypeName = "Varchar")] //Setting column name and data type of the column.
         public string SupplierName { get; set; }
         public ICollection<Customer> Customers { get; set; }
+        public bool Status { get; set; }
     }
 }
